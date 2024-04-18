@@ -23,7 +23,6 @@ function MainHero() {
             }}
             className="mt-20 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl font-medium tracking-tight text-transparent md:text-5xl"
           >
-           
             <TextGenerateEffect words={words} />
           </motion.h1>
 
@@ -37,21 +36,18 @@ function MainHero() {
             }}
             className="mt-4 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-sm font-medium tracking-tight text-transparent md:text-sm"
           >
-            
             <div className="flex justify-center space-x-6">
-            <Link href="https://github.com/kanishkacodes">
-              <span className="border-b border-slate-500 from-red-300 to-red-500 hover:text-gray-400 ">
-                Portfolio
-              </span>
-            </Link>
-            <Link href="https://github.com/kanishkacodes">
-              <span className="border-b border-slate-500 from-red-300 to-red-500 hover:text-gray-400">
-                Me
-              </span>
-            </Link>
+              <Link href="/Portfolio">
+                <span className="border-b border-slate-500 from-red-300 to-red-500 hover:text-gray-400 ">
+                  Portfolio
+                </span>
+              </Link>
+              <Link href="/Portfolio">
+                <span className="border-b border-slate-500 from-red-300 to-red-500 hover:text-gray-400">
+                  Gallery
+                </span>
+              </Link>
             </div>
-            
-            
           </motion.h1>
 
           <motion.h1
@@ -65,9 +61,8 @@ function MainHero() {
             className=" bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-xl font-medium tracking-tight text-transparent md:text-xl"
           >
             <div className="flex justify-center space-x-4">
-              <Link href="https://www.linkedin.com/in/kumarkanishka/" >
+              <Link href="https://www.linkedin.com/in/kumarkanishka/">
                 <Image
-                
                   src="/flaticon/linkedin.png"
                   alt="LinkedIn"
                   width={20}
