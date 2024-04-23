@@ -1,11 +1,12 @@
-
+import Header from '@/components/Header';
 
 function page() {
   return (
     <div>
-      Page is visible
+      <Header/>
     </div>
   )
 }
 
 export default page
+
