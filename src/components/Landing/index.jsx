@@ -4,7 +4,7 @@ import styles from './style.module.scss'
 import { useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import { slideUp } from './animation';
+
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -43,9 +43,9 @@ export default function Home() {
     requestAnimationFrame(animate);
     xPercent += 0.1 * direction;
   }
-//variants={slideUp}
+
   return (
-    <motion.main variants={slideUp}  initial="initial" animate="enter" className={styles.landing}>
+    <motion.main  initial="initial" animate="enter" className={styles.landing}>
       <Image 
         src="/images/background.jpg"
         fill={true}
