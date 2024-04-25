@@ -22,7 +22,7 @@ const navItems = [
   },
   {
     title: "Siklls",
-    href: "/Siills",
+    href: "/Skills",
   },
   {
     title: "Contact",
