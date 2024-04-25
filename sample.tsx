@@ -19,21 +19,32 @@ function Page() {
       
       
       
-      
-      <div className=" space-x-4 flex">
+      <div className=" w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+      <div className=" space-x-4 flex items-center justify-center md:justify-start   animate-infinite-scroll">
         <Link href="/"><span> <Image className=" w-52" src= "/skills/html.png" alt="HTML" width={200} height={200}></Image></span></Link>
         <Link href="/"><span> <Image className=" w-52" src= "/skills/css.png" alt="CSS" width={200} height={200}></Image></span></Link>
         <Link href="/"><span> <Image className=" w-52" src= "/skills/javascript.png" alt="JavaScript" width={200} height={200}></Image></span></Link>
         <Link href="/"><span> <Image className=" w-52" src= "/skills/typescript.png" alt="TypeScript" width={200} height={200}></Image></span></Link>
         <Link href="/"><span> <Image className=" w-52" src= "/skills/tailwind.png" alt="Tailwind CSS" width={200} height={200}></Image></span></Link>
         <Link href="/"><span> <Image className=" w-52" src= "/skills/react.png" alt="React.js" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image className=" w-52" src= "/skills/nextjs.png" alt="Next.js" width={200} height={200}></Image></span></Link>
+        <Link href="/"><span> <Image className=" w-96" src= "/skills/nextjs.png" alt="Next.js" width={200} height={200}></Image></span></Link>
         <Link href="/"><span> <Image className="w-52" src= "/skills/redux.jpg" alt="Redux" width={200} height={200}></Image></span></Link>
         <Link href="/"><span> <Image className=" w-52" src= "/skills/nodejs.png" alt="Node.js" width={200} height={200}></Image></span></Link>
         <Link href="/"><span> <Image className=" w-52" src= "/skills/express.png" alt="Express.js" width={200} height={200}></Image></span></Link>
       </div>
-      
-     
+      <div className=" space-x-4 flex items-center justify-center md:justify-start  animate-infinite-scroll" aria-hidden="true">
+      <Link href="/"><span> <Image className=" w-52" src= "/skills/html.png" alt="HTML" width={200} height={200}></Image></span></Link>
+        <Link href="/"><span> <Image className=" w-52" src= "/skills/css.png" alt="CSS" width={200} height={200}></Image></span></Link>
+        <Link href="/"><span> <Image className=" w-52" src= "/skills/javascript.png" alt="JavaScript" width={200} height={200}></Image></span></Link>
+        <Link href="/"><span> <Image className=" w-52" src= "/skills/typescript.png" alt="TypeScript" width={200} height={200}></Image></span></Link>
+        <Link href="/"><span> <Image className=" w-52" src= "/skills/tailwind.png" alt="Tailwind CSS" width={200} height={200}></Image></span></Link>
+        <Link href="/"><span> <Image className=" w-52" src= "/skills/react.png" alt="React.js" width={200} height={200}></Image></span></Link>
+        <Link href="/"><span> <Image className=" w-96" src= "/skills/nextjs.png" alt="Next.js" width={200} height={200}></Image></span></Link>
+        <Link href="/"><span> <Image className="w-52" src= "/skills/redux.jpg" alt="Redux" width={200} height={200}></Image></span></Link>
+        <Link href="/"><span> <Image className=" w-52" src= "/skills/nodejs.png" alt="Node.js" width={200} height={200}></Image></span></Link>
+        <Link href="/"><span> <Image className=" w-52" src= "/skills/express.png" alt="Express.js" width={200} height={200}></Image></span></Link>
+      </div>
+      </div>
 
 
 
