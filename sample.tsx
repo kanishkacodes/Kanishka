@@ -92,8 +92,45 @@ function Page() {
 
       </div>
 
+      <li>
+          <Image className=" w-52" src= "/skills/html.png" alt="HTML" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/css.png" alt="CSS" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/javascript.png" alt="JavaScript" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/typescript.png" alt="TypeScript" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/tailwind.png" alt="Tailwind CSS" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/react.png" alt="React.js" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-96" src= "/skills/nextjs.png" alt="Next.js" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className="w-52" src= "/skills/redux.jpg" alt="Redux" width={200} height={200}></Image>
+        </li>
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 }
 
 export default Page;
+
+
+

@@ -5,80 +5,80 @@ import { useEffect } from 'react';
 
 function Page() {
 
+  useEffect(() => {
+    const duplicateList = () => {
+      const ul = document.getElementById('logos');
+      const duplicate = ul.cloneNode(true);
+      duplicate.setAttribute('aria-hidden', 'true');
+      ul.parentNode.insertBefore(duplicate, ul.nextSibling);
+    };
+
+    const ul = document.getElementById('logos');
+    ul.addEventListener('animationiteration', duplicateList);
+
+    return () => {
+      ul.removeEventListener('animationiteration', duplicateList);
+    };
+  }, []);
+
+
   
 
   return (
-    <div className=" dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2]  flex items-center justify-center">
-      <div className="">
-        
-
-      <h1 className="text-4xl  font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-700 py-8">Web Tech Stacks:</h1>
-      
-      
-      
-      
-      
-      
-      
-      <div className=" space-x-4 flex">
-        <Link href="/"><span> <Image className=" w-52" src= "/skills/html.png" alt="HTML" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image className=" w-52" src= "/skills/css.png" alt="CSS" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image className=" w-52" src= "/skills/javascript.png" alt="JavaScript" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image className=" w-52" src= "/skills/typescript.png" alt="TypeScript" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image className=" w-52" src= "/skills/tailwind.png" alt="Tailwind CSS" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image className=" w-52" src= "/skills/react.png" alt="React.js" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image className=" w-52" src= "/skills/nextjs.png" alt="Next.js" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image className="w-52" src= "/skills/redux.jpg" alt="Redux" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image className=" w-52" src= "/skills/nodejs.png" alt="Node.js" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image className=" w-52" src= "/skills/express.png" alt="Express.js" width={200} height={200}></Image></span></Link>
-      </div>
-      
-     
-
-
-
-
-
-
-
-
-      
-     
-
-      <h1 className="text-4xl  font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-700 py-8">Programming Languages:</h1>
-
-      <div className="flex space-x-8" >
-       
-        <Link href="/"><span> <Image src= "/skills/c.png" alt="C" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image src= "/skills/c++.png" alt="C++" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image src= "/skills/python.png" alt="Python" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image src= "/skills/javascript.png" alt="JavaScript" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image src= "/skills/typescript.png" alt="TypeScript" width={200} height={200}></Image></span></Link>
-      </div>
-
-      <h1 className="text-4xl  font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-700 py-8">Familiar With:</h1>
-      
-      <div className="flex space-x-8">
-        
-        <Link href="/"><span> <Image src= "/skills/sass.png" alt="Sass" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image src= "/skills/gsap.png" alt="GSAP" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image src= "/skills/zod.png" alt="Zod" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image src= "/skills/framer.png" alt="Framer Motion" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image src= "/skills/daisyui.png" alt="DaisyUI" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image src= "/skills/aui.png" alt="AUI" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image src= "/skills/sadcn.png" alt="SADCN" width={200} height={200}></Image></span></Link>
-      </div>
-      
-
-      <h1 className="text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-700 py-8">Databases:</h1>
-
-      <div className="flex space-x-8">
-        
-        <Link href="/"><span> <Image src= "/skills/mongodb.png" alt="MongoDB" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image src= "/skills/supabase.png" alt="Supabase" width={200} height={200}></Image></span></Link>
-        <Link href="/"><span> <Image src= "/skills/firebase.png" alt="Firebase" width={200} height={200}></Image></span></Link>
-      </div>
-
+    <div className="dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] flex items-center justify-center">
+      <div className="w-full inline-flex flex-nowrap overflow-hidden mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)">
+        <ul id="logos" className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+        <li>
+          <Image className=" w-52" src= "/skills/html.png" alt="HTML" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/css.png" alt="CSS" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/javascript.png" alt="JavaScript" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/typescript.png" alt="TypeScript" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/tailwind.png" alt="Tailwind CSS" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/react.png" alt="React.js" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-96" src= "/skills/nextjs.png" alt="Next.js" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className="w-52" src= "/skills/redux.jpg" alt="Redux" width={200} height={200}></Image>
+        </li>
+        </ul>
+        <ul id="logos" className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" >
+        <li>
+          <Image className=" w-52" src= "/skills/html.png" alt="HTML" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/css.png" alt="CSS" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/javascript.png" alt="JavaScript" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/typescript.png" alt="TypeScript" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/tailwind.png" alt="Tailwind CSS" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-52" src= "/skills/react.png" alt="React.js" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className=" w-96" src= "/skills/nextjs.png" alt="Next.js" width={200} height={200}></Image>
+        </li>
+        <li>
+        <Image className="w-52" src= "/skills/redux.jpg" alt="Redux" width={200} height={200}></Image>
+        </li>
+        </ul>
       </div>
 
     </div>
