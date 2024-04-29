@@ -54,7 +54,7 @@ const config: Config = {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         'infinite-scroll': 'infinite-scroll 10s linear infinite',
-        'infinite-scroll-reverse': 'infinite-scroll-reverse 15s linear infinite',
+        'infinite-scroll-reverse': 'infinite-scroll-reverse 20s linear infinite',
         'loop-scroll': 'loop-scroll 50s linear infinite', // Added
       },
       backgroundImage: {
