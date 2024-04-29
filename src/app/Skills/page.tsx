@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Header from '@/components/Header';
 
 function page() {
   return (
     <div className=" h-[55rem] bg-[#fffff] bg-grid-black/[0.2]">
+      <Header/>
       <h1 className="text-4xl md:text-7xl  pt-56 md:pt-40  relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8 items-center text-center">
         Tech Stacks
       </h1>
