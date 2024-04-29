@@ -53,7 +53,8 @@ const config: Config = {
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+        'infinite-scroll': 'infinite-scroll 10s linear infinite',
+        'infinite-scroll-reverse': 'infinite-scroll-reverse 15s linear infinite',
         'loop-scroll': 'loop-scroll 50s linear infinite', // Added
       },
       backgroundImage: {
@@ -79,6 +80,10 @@ const config: Config = {
         'infinite-scroll': {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },
+        },
+        'infinite-scroll-reverse': { // Added
+          from: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(0)' },
         },
         'loop-scroll': { // Added
           from: { transform: 'translateX(0)' },
