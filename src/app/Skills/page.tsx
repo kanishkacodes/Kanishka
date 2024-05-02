@@ -13,9 +13,9 @@ function page() {
       <h1 className="text-4xl md:text-7xl  pt-56 md:pt-40  relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8 items-center text-center">
         Tech Stacks
       </h1>
-      <div className="group pl-0 pr-0 md:pl-56 md:pr-56 ">
-      <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] mt-10  group-hover:paused">
-        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+      <div className=" pl-0 pr-0 md:pl-56 md:pr-56 ">
+      <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] mt-10 group">
+        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll group-hover:paused">
           <li>
             <Image
               className="w-20 md:w-32"
@@ -99,7 +99,7 @@ function page() {
           </li>
         </ul>
         <ul
-          className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+          className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll group-hover:paused"
           aria-hidden="true"
         >
           <li>
@@ -187,8 +187,8 @@ function page() {
       </div>
       </div>
       <div className="group pl-0 pr-0 md:pl-56 md:pr-56">
-      <div className="w-full  pt-15 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] mt-10 group-hover:paused">
-        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-reverse">
+      <div className="w-full  pt-15 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] mt-10 group">
+        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-reverse group-hover:paused">
           <li>
             <Image
               className="w-20 md:w-32"
@@ -326,7 +326,7 @@ function page() {
           </li>
         </ul>
         <ul
-          className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-reverse"
+          className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-reverse group-hover:paused"
           aria-hidden="true"
         >
           <li>
