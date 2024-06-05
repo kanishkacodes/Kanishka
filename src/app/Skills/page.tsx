@@ -64,7 +64,7 @@ function page() {
           <li>
             <Image
               className="w-20 md:w-32"
-              src="/skills/react.png"
+              src="/skills/React.png"
               alt="React.js"
               width={100}
               height={100}
@@ -150,7 +150,7 @@ function page() {
           <li>
             <Image
               className="w-20 md:w-32"
-              src="/skills/react.png"
+              src="/skills/React.png"
               alt="React.js"
               width={100}
               height={100}
