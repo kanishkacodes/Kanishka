@@ -5,7 +5,7 @@ function page() {
   return (
     <div>
       <Header/>
-      <div className=" h-[50rem] flex flex-col items-center justify-center">
+      <div className=" h-[40rem] flex flex-col items-center justify-center">
       <HoverImageLinks />
       </div>
     </div>
