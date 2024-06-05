@@ -8,6 +8,8 @@ function page() {
     <main>
       <Header/>
       <Landing/>
+      <Landing/>
+      <Landing/>
       
      
       
