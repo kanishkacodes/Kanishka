@@ -43,7 +43,7 @@ const SkillList = ({ skills, reverse }) => (
 );
 
 const Page = () => (
-  <div className="h-[51rem] bg-[#fffff] bg-grid-black/[0.2]">
+  <div className="h-screen bg-[#fffff] bg-grid-black/[0.2]">
     <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_40%,black)]"></div>
     <Header />
     <h1 className="text-4xl md:text-7xl pt-56 md:pt-40 relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8 items-center text-center">
