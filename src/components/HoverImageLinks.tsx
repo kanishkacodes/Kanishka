@@ -5,25 +5,26 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 export const HoverImageLinks = () => {
   return (
-    <section className="bg-white p-4 md:p-8">
+    <section className=" p-4 md:p-8">
+      
       <div className="mx-auto max-w-5xl">
         <Link
           heading="Explorex"
           subheading="Web Developement Intern"
           imgSrc="/work/explorex.jpeg"
-          href="/"
+          href="/Work/Explorex"
         />
         <Link
           heading="NIT Patna"
           subheading="Research Intern"
           imgSrc="/work/NIT Patna intern.jpg"
-          href="/"
+          href="/Work/NITP"
         />
         <Link
           heading="Business Web Solutions"
           subheading="Full Stack Developer intern"
           imgSrc="/work/BWS intern.png"
-          href="/"
+          href="/Work/BWS"
         />
       </div>
     </section>
@@ -87,7 +88,7 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-4xl font-bold text-black transition-colors duration-500 group-hover:text-gray-700 md:text-6xl"
+          className="relative z-10 block text-4xl font-medium text-black transition-colors duration-500 group-hover:text-gray-700 md:text-6xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -103,7 +104,7 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-base text-gray-700 transition-colors duration-500 group-hover:text-gray-500">
+        <span className="relative z-10 mt-2 block text-base text-gray-800 transition-colors duration-500 group-hover:text-gray-500">
           {subheading}
         </span>
       </div>
@@ -137,10 +138,15 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
           },
         }}
         transition={{ type: "spring" }}
-        className="relative z-10 p-4"
+        className="relative z-10 p-4 hidden md:block"
       >
         <FiArrowUpRight className="text-5xl text-black" />
       </motion.div>
+
+      {/* Always visible on mobile */}
+      <div className="absolute right-4 top-1/2 transform -translate-y-1/2 md:hidden">
+        <FiArrowUpRight className="text-2xl text-black" />
+      </div>
     </motion.a>
   );
 };
